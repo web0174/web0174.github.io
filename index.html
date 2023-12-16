@@ -4,7 +4,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <style>
+	    body {
+  background: #6e28d9;
+  height: 100vh;
+  margin: 0px;
+  
+  
+}
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+svg {
+	font-family: "Paytone One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 10s infinite alternate;
+	stroke-width: 2;
+	stroke: #F4F4F4;
+	font-size: 54px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(178,172,204,0); stroke: rgba(244,244,244,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(178,172,204,0); stroke: rgba(244,244,244,1); }
+	80%  {fill: rgba(178,172,204,0); stroke: rgba(244,244,244,1); stroke-width: 3; }
+	100% {
+		fill: rgba(178,172,204,1); stroke: rgba(244,244,244,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(38, 21, 12, 0.36) 0%, rgba(38, 21, 12, 0.36) 2%,rgba(145, 27, 35, 0.36) 2%, rgba(145, 27, 35, 0.36) 5%,rgba(65, 22, 18, 0.36) 5%, rgba(65, 22, 18, 0.36) 39%,rgba(11, 19, 6, 0.36) 39%, rgba(11, 19, 6, 0.36) 41%,rgba(172, 28, 41, 0.36) 41%, rgba(172, 28, 41, 0.36) 69%,rgba(118, 25, 29, 0.36) 69%, rgba(118, 25, 29, 0.36) 79%,rgba(199, 30, 47, 0.36) 79%, rgba(199, 30, 47, 0.36) 87%,rgba(92, 24, 24, 0.36) 87%, rgba(92, 24, 24, 0.36) 100%),linear-gradient(90deg, rgba(86, 93, 205, 0.34) 0%, rgba(86, 93, 205, 0.34) 12.5%,rgba(158, 71, 211, 0.34) 12.5%, rgba(158, 71, 211, 0.34) 25%,rgba(110, 86, 207, 0.34) 25%, rgba(110, 86, 207, 0.34) 37.5%,rgba(254, 41, 220, 0.34) 37.5%, rgba(254, 41, 220, 0.34) 50%,rgba(230, 48, 218, 0.34) 50%, rgba(230, 48, 218, 0.34) 62.5%,rgba(182, 63, 214, 0.34) 62.5%, rgba(182, 63, 214, 0.34) 75%,rgba(206, 56, 216, 0.34) 75%, rgba(206, 56, 216, 0.34) 87.5%,rgba(134, 78, 209, 0.34) 87.5%, rgba(134, 78, 209, 0.34) 100%),linear-gradient(222deg, rgb(9, 74, 160),rgb(248, 53, 57));
+}
+
+
+    </style>
   </head>
   <body>
     <div class="wrapper">
